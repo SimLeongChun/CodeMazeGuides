@@ -1,10 +1,9 @@
-namespace ValueObjects.ValueObjects;
+namespace Newsroom.Core;
 
 public enum ErrorType
 {
     NotFound,
-    Conflict,
-    Validation
+    Conflict
 }
 
 public sealed record Error(string Code, string Description, ErrorType Type);
